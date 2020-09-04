@@ -1,0 +1,641 @@
+ :root {
+  --main-bg-color: #F2F2F2;
+  --main-color1: #454545;
+  --main-color2: red;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+/* /////////////////////////////////////////////    CONTENU FENETRE - zones  */
+
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+
+
+.full-screen {
+  display: flex;
+  width:600vw;
+  max-width:calc(1920px *6 );
+  max-height:100%;
+  overflow:hidden;
+  height: 100%;
+}
+
+.full-screens {
+  height: 100%;
+  width: calc(100%/6);
+}
+
+
+#contenu0 {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+#contenu1 {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+#contenu2 {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+#contenu3 {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+#contenu4 {
+  position: absolute;
+  margin-left: 30px;
+  bottom: 0px;
+  width: 100%;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+#contenu5 {
+  position: absolute;
+  bottom: 20px;
+  padding-left: 30px;
+  width: 100%;
+  animation: contenu 6s ease;
+  transition: all 3s;
+}
+
+/* ------------------   Scroll  */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.scrolling {
+  height: 100%;
+  overflow: scroll;
+}
+.scroll { 
+  margin-left: 0px; 
+  margin-top: 50px; 
+  }
+div.scroll { 
+  width: 90%; 
+  height: 305px; 
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  text-align:justify; 
+}
+
+
+/* ------------------   intro - Attention audio  */
+.indication_volume {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  animation: volume 6s ease;
+  transition: all 3s;
+  opacity: 0;
+}
+
+@keyframes volume {
+  0%   {opacity: 1;}
+  60%  {opacity: 1;}
+  70%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+/* ------------------   intro - Attention taille écran  */
+.resize {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0;
+  color: var(--main-color1);
+  font-size: 30px;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+
+
+/* /////////////////////////////////////////////    ANIMATION FOND D'ECRAN + SON */
+
+/* ------------------   Image de fond  */
+.image_bg {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  transition: all 3s;
+  opacity: 0;
+}
+
+/* ------------------   Play / Pause  */
+
+button.uk-button {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+}
+
+
+
+#btn-show {
+    display: none;
+}
+.tgl
+{
+  display:inline;
+  margin-top: -15px;
+  right: 0px;
+  position: absolute;
+  z-index: 200;
+  animation: contenu 6s ease;
+}
+
+
+#btn-show1 {
+    display: none;
+}
+.tgl1
+{
+  display:inline;
+  margin-top: -15px;
+  right: -100%;
+  position: absolute;
+  z-index: 300;
+  animation: contenu 6s ease;
+}
+
+
+#btn-show2 {
+    display: none;
+}
+.tgl2
+{
+  display:inline;
+  margin-top: -15px;
+  right: -200%;
+  position: absolute;
+  z-index: 300;
+  animation: contenu 6s ease;
+}
+
+
+#btn-show3 {
+    display: none;
+}
+.tgl3
+{
+  display:inline;
+  margin-top: -15px;
+  right: -300%;
+  position: absolute;
+  z-index: 300;
+  animation: contenu 6s ease;
+}
+
+
+#btn-show4 {
+    display: none;
+}
+.tgl4
+{
+  display:inline;
+  margin-top: -15px;
+  right: -400%;
+  position: absolute;
+  z-index: 300;
+  animation: contenu 6s ease;
+}
+
+
+#btn-show5 {
+    display: none;
+}
+
+.tgl5
+{
+  display:inline;
+  margin-top: -15px;
+  right: -500%;
+  position: absolute;
+  z-index: 300;
+  animation: contenu 6s ease;
+}
+
+
+/* ------------------   Tête de lecture  */
+.reader_head {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0px;
+  border-left-style: solid;
+  border-left-color: var(--main-color2);
+  opacity: 0;
+  transition: all 3s;
+}
+
+@keyframes line {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+#animated {
+  animation: line 36s linear infinite;
+  animation-play-state: paused; 
+}
+#animated.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s;
+}
+
+
+
+#animated2 {
+  animation: line 14s linear infinite;
+  animation-play-state: paused; 
+}
+#animated2.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated2.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s; }
+
+
+
+#animated3 {
+  animation: line 23s linear infinite;
+  animation-play-state: paused; 
+}
+#animated3.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated3.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s; }
+
+
+
+#animated4 {
+  animation: line 12s linear infinite;
+  animation-play-state: paused; 
+}
+#animated4.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated4.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s; 
+}
+
+
+#animated5 {
+  animation: line 30s linear infinite;
+  animation-play-state: paused; 
+}
+#animated5.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated5.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s; 
+}
+
+
+
+#animated6 {
+  animation: line 71s linear infinite;
+  animation-play-state: paused; 
+}
+#animated6.off {
+  animation-play-state: paused;
+  opacity: 0;
+  transition: all 3s;
+}
+#animated6.on{
+  animation-play-state:running;
+  opacity: 1; 
+  transition: all 3s; 
+}
+
+
+
+/* /////////////////////////////////////////////    TYPO  */
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--main-color1);
+  font-size: 30px;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+}
+
+h2 {
+  color: var(--main-color1);
+  font-size: 20px;
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 40px;
+}
+
+.labeur {
+  color: var(--main-color1);
+  font-family: "AVENIR";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  padding-right: 50%;
+  letter-spacing: 1px; 
+}
+
+.legende {
+  color: var(--main-color1);
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  padding-right: 50%;
+  font-style: italic;
+}
+
+.indication_audio {
+  color: var(--main-color1);
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.h_parties {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: var(--main-color1);
+  border-left-style: solid;
+  padding-left: 5px;
+  animation: contenu 6s ease;
+}
+
+
+.mail {
+  font-weight: 500;
+  color: #454545;
+}
+.mail:hover {
+  color: white;
+}
+
+
+/* /////////////////////////////////////////////    Timeline  */
+
+#timeline {
+  width: 105%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  animation: contenu 6s ease;
+  z-index: 10;
+}
+
+#timeline div {
+  width: 100%;
+  height: 15px;
+  border-left-style: solid;
+  color: var(--main-color1);
+  border-width: 1px; 
+  animation: contenu 6s ease;
+  z-index: 10;
+}
+
+@keyframes contenu {
+  0%   {opacity: 0;}
+  70%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+/* /////////////////////////////////////////////    BOUTON téléchargement  */
+
+.wrap {
+  position: relative;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 80px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  border-left-style: solid;
+  color: var(--main-color1);
+  border-width: 3px; 
+  margin-bottom: 0px;
+}
+
+.button:hover {
+  background-color: white;
+  color: var(--main-color1);
+  text-decoration: none;
+}
+
+.roll-text {
+  display: block;
+  position: relative;
+  transition: all 420ms cubic-bezier(.175,.885,.32,1.275);
+  color: var(--main-color1);
+}
+
+.roll-text:last-child {
+  color: var(--main-color1);
+}
+
+.rollover:hover .roll-text:first-child {
+  margin-top: -38px;
+  color: var(--main-color1);
+}
+
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+
+
+
+/* /////////////////////////////////////////////    ZONE IMAGES  */
+
+
+#colonne_img {
+  position: absolute;
+  padding: 10px;
+  right: 30px;
+  bottom: -10px;
+  width: 30%;
+}
+
+#bloc_img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+  align-items:flex-end;
+}
+
+#bloc_img p {
+  width: 100%;
+  height:100%;
+  color: var(--main-color1);
+  font-family: "Avenir Next";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  margin-right: 8px;
+}
+
+#bloc_img img {
+  width: 100%;
+  height:100% ;
+}
+
+#bloc_img video {
+  width: 100%;
+  height:100% ;
+}
+
+
+
+/* /////////////////////////////////////////////    GALLERY Images */
+
+.video {
+  max-width: 200px;
+}
+
+/* ------------------   Menu filtre  */
+.filter {
+   margin-right: 30px;
+   margin-bottom: 30px;
+}
+
+.filter-btn {
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 0 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  border-left-style: solid;
+  color: var(--main-color1);
+  border-width: 3px; 
+  margin-bottom: 0px;
+
+}
+
+.filter-btn:hover {
+  background-color: white;
+  color: var(--main-color1);
+}
+
+.active {
+  background: white;
+  color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

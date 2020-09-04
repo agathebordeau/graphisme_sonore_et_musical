@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  
+  <title>Graphisme sonore et musical</title>
+
+  <!-- FONTS --> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.17.0/css/uikit.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+  <!-- AUTRES -->
+
+  <script src='js/main.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+  <script src="./script.js"></script>
+
+</head>
+
+<body onresize="myFunction()" onload="myFunction()">
+
+  <!----------------------------------- Attention taille écran + audio -->
+
+    <p id="taille_fenetre" class="resize">Augmentez la taille de la fenêtre pour continuer</p>
+
+    <div id="scroll">
+
+    <!-- Indication volume -->
+    <div id="logo_volume" class="indication_volume">
+      <i class="uk-icon-volume-up uk-icon-large"></i>
+      <br><br>
+      <p class="indication_audio">Pour profiter au mieux de l’experimence, veuillez vérifier que votre volume est bien allumé.</p>
+    </div> 
+
+  <!----------------------------------- Scene 1 -->
+
+    <main class="full-screen" role="main">
+
+      <section class="full-screens" id="section-0">
+
+        <!-- Timeline -->
+        <span class="h_parties">0_intro</span>
+
+        <div id="timeline">
+          <div style=""></div>
+          <div style=""></div>
+          <div style=""></div>
+          <div style=""></div>
+          <div style=""></div>
+          <div style=""></div>
+        </div>    
+          
+        <!-- Play / Pause -->
+        <div class="tgl">
+          <button id="btn-hide" onclick="playAudio()" class="btn-toggle uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+          <button id="btn-show" onclick="pauseAudio()" class="btn-toggle uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+        </div>  
+        
+        <!-- Audio -->
+        <audio id="bgm">
+          <source src="media/Audio1.mp3" type="audio/mpeg" />
+        </audio>
+
+        <!-- Image de fond -->          
+        <div id="img_1" class="image_bg">
+          <img src="media/img_bg_1.jpg">
+        </div>
+
+        <!-- Tête de lecture -->
+        <div id="animated" class="reader_head"></div> 
+        
+        <div id="contenu0">
+
+          <!-- Zone de texte -->
+          <h1>Graphisme<br>sonore et musical</h1>
+
+          <p class="labeur"><br>Le concept de graphisme sonore et musical développé dans le cadre de mon projet
+          	de diplôme à pour ambition d’ouvrir à une nouvelle discipline dans laquelle fusionnent le graphisme,
+          	la musique et la réalité augmentée. Je le défini comme graphisme capable de produire de la musique
+          	dans une relation d’analogie à cette dernière. Le but de cette démarche est de ramener le sensible
+          	de la création et de l’écoute musicale dans le domaine du design graphique à l’aide de la réalité
+          	augmenté sonore.<br> Pour présenter ce concept, j’ai choisi d’intégrer un deuxième niveau de lecture
+          	à ce site. En appuyant sur le bouton play, l’utilisateur est transporté vers un univers graphique
+          	et sonore issu de mes expérimentations graphiques.<br><br>Pour suivre l'évolution de ce projet
+          	rendez-vous à l'adresse suivante : <a class="mail" target="_blank" href="https://www.agathebordeau.com/graphic-midi">www.agathebordeau.com/graphic-midi</a></p>
+
+          <p class="legende"><br><br>1 Schéma de principe du graphisme sonore et musical</p>
+
+          <!-- Zone d'image -->
+          <div id="colonne_img">
+              <div id="bloc_img">
+                <p>1</p>
+                <img src="media/schéma_principe_1.jpg">
+              </div>
+          </div>  
+
+        </div>
+
+      </section>
+
+<!----------------------------------- Scene 2 -->
+
+      <section class="full-screens" id="section-1">
+          
+        <div>
+ 
+          <!-- Timeline -->
+          <span class="h_parties">1_contexte</span>
+
+          <div id="timeline">
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+          </div>  
+
+          <!-- Play / Pause -->
+          <div class="tgl1">
+              <button id="btn-hide1" onclick="playAudio2()" class="btn-toggle1 uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+              <button id="btn-show1" onclick="pauseAudio2()" class="btn-toggle1 uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+          </div>
+
+          <audio id="bgm2">
+            <source src="media/Audio2.mp3" type="audio/mpeg" />
+          </audio>
+
+          <div id="img_2" class="image_bg">
+            <img src="media/img_bg_2.jpg">
+          </div>
+
+          <div id="animated2" class="reader_head"></div>
+
+        </div>
+
+          <div id="contenu1">
+
+          <h2 style="text-align:left">Graphisme sonore & musical</h2>
+
+          <p class="labeur"><br><br>Ce projet émerge grâce à un contexte reliant musique et graphisme étudié dans mon mémoire <i>Graphisme sonore et musical : quand les interfaces de créations se rencontrent</i>, c’est pourquoi j’ai fait le choix de le rattacher à la <strong>communication dans l’industrie musicale.</strong> L'hypothèse est de l'utiliser pour des supports communicants tel que l’identité visuelle d’événements musicaux ou culturels. Il permet de <strong>relier le visuel au genre et/ou à l’ambiance musicale de l’événement.</strong> C’est pourquoi il m’a semblé nécessaire de développer le projet plastique sur deux niveaux, le premier est lié aux conditions de création tandis que le second aux conditions de réception.<br><br>Le parti pris est d’<strong>hybrider les outils de P.A.O. et ceux de M.A.O.,</strong> pour créer un outil et un médium hybride. Le projet prend la forme d’un <strong>logiciel</strong> de P.A.O. augmenté de la dimension sonore et d’une <strong>application pour smartphone</strong> qui permettra de lire ce type de graphisme, en créer une réalité augmentée sonore. Ainsi on remet en question et on fait évoluer le graphisme d’aujourd’hui en le rapprochant de la pratique du sound design.
+          </p>
+
+          <p class="legende"><br><br>3 Schéma de principe du projet plastique<br>2 Couverture du mémoire Graphisme sonore et musical : quand les interfaces de créations se rencontrent</p>      
+
+          <div class="wrap">
+            <a href="media/Mémoire_web.pdf" target="_blank" download class="button rollover">
+              <span class="roll-text">Mémoire</span>
+              <span class="roll-text">Ouvrir</span>
+            </a>
+          </div>
+            
+          <div id="colonne_img">
+            <div id="bloc_img">
+              <p>2</p>
+              <img src="media/schéma_principe_2.jpg">
+            </div>
+            <div id="bloc_img">
+              <p>3</p>
+              <img src="media/instagram_memoire.jpg">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+<!----------------------------------- Scene 3 -->
+
+      <section class="full-screens" id="section-2">
+       
+        <div>
+
+          <!-- Timeline -->
+          <span class="h_parties">2_logiciel</span>
+
+          <div id="timeline">
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+          </div>  
+
+          <!-- Play / Pause -->
+          <div class="tgl2">
+            <button id="btn-hide2" onclick="playAudio3()" class="btn-toggle2 uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+            <button id="btn-show2" onclick="pauseAudio3()" class="btn-toggle2 uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+          </div>
+
+          <audio id="bgm3">
+          <source src="media/Audio3.mp3" type="audio/mpeg" />
+          </audio>
+
+          <div id="img_3" class="image_bg">
+            <img src="media/img_bg_3.jpg">
+          </div>
+
+          <div id="animated3" class="reader_head"></div>
+
+        </div>
+
+        <div id="contenu2"> 
+
+          <h2 style="text-align:left">Logiciel</h2>
+
+          <p class="labeur">Le logiciel fonctionne de la même manière qu’un logiciel de M.A.O. classique mais il possède des fonctionnalités supplémentaires liées à la correspondance sonore.<br><br>
+            En effet le graphisme sonore et musical utilise un principe de scanner, la tête de lecture vient lire les pixels de l’image et les retranscrire en sons. La position Y d’un élément graphique dans la page blanche correspond à la hauteur d’un son, ainsi plus la forme est placée en haut de la page, plus le son produit est aigu et plus elle est placée en bas de la page, plus le son produit est grave. De plus, les couleurs correspondent à des samples différents qui sont eux aussi personnalisables suivant le rendu sonore et graphique souhaité. Ainsi <strong>le graphisme n’est pas figé par l’intervention du son, mais il est en action avec ce dernier.</strong><br><br>
+          </p>
+
+          <p class="legende"><br>
+          <br>4 Mockup du logiciel
+          <br>5 Vidéo de principe du logiciel</p>
+
+
+          <div id="colonne_img">
+            <div id="bloc_img">
+             <p>4</p>
+             <img src="media/log_2.png">
+             </div>
+
+            <div id="bloc_img">
+              <p>5</p>
+              <video preload="auto" controls="controls">
+                <source src="media/log_1.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+             
+        </div>
+
+      </section>
+
+
+<!----------------------------------- Scene 4 -->
+
+      <section class="full-screens" id="section-3">
+
+        <div>
+
+          <!-- Timeline -->
+          <span class="h_parties">3_application</span>
+       
+          <div id="timeline">
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+          </div>
+
+          <div class="tgl3">
+              <button id="btn-hide3" onclick="playAudio4()" class="btn-toggle3 uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+              <button id="btn-show3" onclick="pauseAudio4()" class="btn-toggle3 uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+          </div>
+
+          <audio id="bgm4">
+          <source src="media/Audio4.mp3" type="audio/mpeg" />
+          </audio>
+
+          <div id="img_4" class="image_bg">
+            <img src="media/img_bg_4.png">
+          </div>
+
+          <div id="animated4" class="reader_head"></div>
+
+        </div>
+
+        <div id="contenu3" class="contenu3">
+            
+          <h2 style="text-align:left">Application</h2>
+         
+          <p class="labeur">
+          L'application a pour but de lire ce nouveau type de médium, ainsi en scannant l’affiche, l’utilisateur pourra savoir de quel genre musical ou de quel groupe ou artiste il s’agit.<br> Mais le but est d’enrichir l’expérience visuelle par l’expérience audio, comme une extension du graphisme par l’intervention du son.
+          C'est pourquoi la particularité de ce projet réside dans la suite de l'action, en effet après avoir eu accès à cette information il aura la possibilité de personnaliser à son tour le contenu graphique et sonore et le partager à son tour. Ainsi le spectateur devient acteur de par sa réappropriation du contenu. 
+          </p>
+
+          <p class="legende"><br>
+          <br>6 Vidéo d'utilisation de l'application
+          <br>7 Mise en situation de l'application</p>
+
+          <div id="colonne_img">
+
+          <div id="bloc_img">
+            <p>6</p>
+            <video preload="auto" controls="controls" poster="media/app_1.jpg">
+              <source src="media/app_1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div id="bloc_img">
+            <p>7</p>
+            <img src="media/app_3.jpg">  
+          </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+<!----------------------------------- Scene 5 -->
+
+      <section class="full-screens" id="section-4">
+        
+        <div>
+
+          <!-- Timeline -->
+          <span class="h_parties">4_exemples</span>
+          
+          <div id="timeline">
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+          </div>
+           
+          <div class="tgl4">
+              <button id="btn-hide4" onclick="playAudio5()" class="btn-toggle4 uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+              <button id="btn-show4" onclick="pauseAudio5()" class="btn-toggle4 uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+          </div>
+
+          <audio id="bgm5">
+          <source src="media/Audio5.mp3" type="audio/mpeg" />
+          </audio>
+
+
+          <div id="img_5" class="image_bg">
+            <img src="media/img_bg_5.jpg">
+          </div>
+
+          <div id="animated5" class="reader_head"></div>         
+
+          <div id="contenu4" class="contenu4">
+
+          <div id="filter">
+            <button class="filter-btn filter-all active">All</button>
+            <button class="filter-btn filter-poster">Poster</button>
+            <button class="filter-btn filter-album">Album</button>
+          </div>
+
+
+          <div class="scroll row no-gutters">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 filter album">
+              <video class="video" class="album all" preload="auto" controls="controls"><source src="media/Electro.mp4" type="video/mp4"></video>
+              <div class="overlay"></div>
+            </div>      
+          
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 filter poster">
+              <video class="video" class="poster all" preload="auto" controls="controls"><source src="media/La_rue_ketanou_poster.mp4" type="video/mp4"></video>
+              <div class="overlay"></div>
+            </div>
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 filter poster">
+              <video class="video" class="poster all" preload="auto" controls="controls"><source src="media/jazz.mp4" type="video/mp4"></video>
+              <div class="overlay"></div>
+            </div>            
+          </div> 
+
+          </div>  
+          
+        </div>
+
+      </section>
+
+<!----------------------------------- Scene 6 -->
+
+      <section class="full-screens" id="section-5">
+       
+        <div>
+
+          <!-- Timeline -->        
+          <span class="h_parties">5_contact</span>
+
+          <div id="timeline">
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+            <div style=""></div>
+          </div>
+          
+          <div class="tgl5">
+            <button id="btn-hide5" onclick="playAudio6()" class="btn-toggle5 uk-button"><i class="uk-icon-hover uk-icon-play"></i></button>
+            <button id="btn-show5" onclick="pauseAudio6()" class="btn-toggle5 uk-button"><i class="uk-icon-hover uk-icon-pause"></i></button>
+          </div>
+
+          <audio id="bgm6">
+            <source src="media/Audio6.mp3" type="audio/mpeg" />
+          </audio>
+
+
+          <div id="img_6" class="image_bg">
+            <img src="media/img_bg_6.jpg">
+          </div>
+
+          <div id="animated6" class="reader_head"></div>
+
+          <div id="contenu5" class="contenu5"> 
+
+          <p class="labeur">Réalisé par <a class="mail" href="mailto:abordeau@esad-orleans.fr">Agathe Bordeau</a>.<br>Visitez : <a class="mail" target="_blank" href="https://agathebordeau.portfoliobox.net">agathebordeau.portfoliobox.net</a><br><br>Réalisé en juin 2020 à Orléans<br>DNSEP - Projet plastique option Communication ESAD Orléans<br><br>Design optimisé pour une résolution de 1280 pixels de large.<br>Textes composés en : Roboto Mono; sans-serif; <br>
+          </p>
+
+          </div>
+
+       </div>
+
+      </section>
+
+    </main>
+
+
+
+
+<script src='js/main.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script><script src="./script.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<script src='https://code.jquery.com/jquery-1.9.1.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+<script src='https://code.jquery.com/jquery-1.9.1.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script  src="./script.js"></script>
+
+</body>
+
+</html>
